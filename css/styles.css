@@ -1,9 +1,49 @@
-td {
-  font-family: Baskerville, serif;
-  font-size: 150px;
+html {
+  box-sizing: border-box;
   text-align: center;
-  border: 3px solid black;
-  width: 300px;
-  height: 300px;
+  font-family: 'Roboto', sans-serif;
+  color: #F2F4F2;
+
+
+}
+
+body {
+  background-color:#39CCCC;
+}
+
+table {
+  text-align: center;
+  display: inline-block;
+
+}
+td {
+  font-size: 120px;
+  text-align: center;
+  border: 5px solid black;
+  width: 150px;
+  height: 150px;
   cursor: pointer;
+}
+
+.box1, .box2, .box3 { border-top: none;}
+.box1, .box4, .box7 { border-left: none;}
+.box3, .box6, .box9 { border-right: none;}
+.box7, .box8, .box9 { border-bottom: none;}
+
+h1 {
+  font-size: 5em;
+  margin:0;
+}
+
+#play-again {
+  font-size:1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  border: 5px solid #39CCCC;
+  margin: 1em;
+  background-color:#F2F4F2;
+}
+
+.box {
+  color:blue;
 }
