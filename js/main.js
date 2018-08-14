@@ -18,9 +18,9 @@ playAgain.addEventListener('click', function() {
   for(var i=0; i<reset.length; i++){
   reset[i].innerHTML = '';
   };
-  imageTag.src='https://media.giphy.com/media/XVR9lp9qUDHmU/giphy.gif';
-  body.style.backgroundColor ='#39CCCC';
-  winner.innerHTML = 'I AM NOT #HASHTAG';
+
+
+  winner.innerHTML = 'Good Luck!';
 });
 
 
@@ -39,8 +39,10 @@ function ticTacMove() {
   if (this.innerHTML === ''){
     if (turn%2 != 0){
       this.innerHTML = 'X';
+      this.style.color = '#228DFF';
     } else {
       this.innerHTML = 'O';
+      this.style.color = '#FF1177';
     }
     check();
     turn ++;
@@ -59,19 +61,7 @@ function check() {
     if (foo1 === foo2 && foo2 ===  foo3 && foo1 != "") {
       win = foo1;
       winner.innerHTML = 'PLAYER ' +"'"+ win +"'" + ' WINS!';
-      body.style.backgroundColor = '#8358E6';
-      var response = $.ajax({
-      url: "http://api.giphy.com/v1/gifs/search?q=you+win&api_key=RMPk3NWNEsXqUJkMuD1bNVBdRvnsxqRV&limit=15",
-      type: "GET",
-      success: function(data) {
-        var gifs = data
-          console.log(gifs);
-        var gif = gifs.data[0].images.original.url
-        var imageTag = document.querySelector('.giphy')
-        imageTag.src = gif
-      }
 
-      })
     }
   })
 }

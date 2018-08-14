@@ -1,15 +1,62 @@
 html {
   box-sizing: border-box;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Press Start 2P";
   color: #F2F4F2;
 
 
 }
 
-body {
-  background-color:#39CCCC;
+html {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background:
+    linear-gradient(
+      to bottom,
+      transparent 50%,
+      rgba(0, 0, 0, 0.5) 50%),
+    linear-gradient(
+      to bottom,
+      #296dd6,
+      #d03bdd);
+  background-size: 10px 10px, 100% 100%;
 }
+
+a {
+text-decoration: none !important;
+}
+
+
+
+.winner{
+margin-bottom: 1em;
+}
+
+
+button {
+font-size: 4em;
+margin-top: 1em;
+background: none;
+border:none;
+color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+
+
+}
+
+
+
 
 table {
   text-align: center;
@@ -19,7 +66,7 @@ table {
 td {
   font-size: 120px;
   text-align: center;
-  border: 5px solid black;
+  border: 15px solid black;
   width: 150px;
   height: 150px;
   cursor: pointer;
@@ -30,20 +77,24 @@ td {
 .box3, .box6, .box9 { border-right: none;}
 .box7, .box8, .box9 { border-bottom: none;}
 
-h1 {
-  font-size: 5em;
-  margin:0;
+ h1 {
+    font-size: 4em;
+    color: #B6FF00;
+    text-shadow:
+      0 0 5px #B6FF00,
+      0 0 10px #fff,
+      0 0 20px #fff,
+      0 0 40px #fff,
+      0 0 80px #fff,
+      0 0 90px #B6FF00,
+      0 0 100px #B6FF00;
 }
 
-#play-again {
-  font-size:1.5em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  border: 5px solid #39CCCC;
-  margin: 1em;
-  background-color:#F2F4F2;
-}
 
-.box {
-  color:blue;
+footer {
+margin-top: 2em;
+}
+footer a{
+text-decoration: none;
+color: white;
 }
