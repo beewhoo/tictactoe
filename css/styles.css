@@ -37,7 +37,8 @@ margin-bottom: 1em;
 
 
 button {
-font-size: 4em;
+font-family:inherit;
+font-size: 3em;
 margin-top: 1em;
 background: none;
 border:none;
@@ -97,4 +98,5 @@ margin-top: 2em;
 footer a{
 text-decoration: none;
 color: white;
+font-size: 1.5em;
 }
